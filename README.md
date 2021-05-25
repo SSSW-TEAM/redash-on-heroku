@@ -50,6 +50,11 @@ See also https://redash.io/help/open-source/setup#-setup
 ```sh
 git push heroku master
 ```
+This command may cause a"push rejected" error. in that case create a new branch:
+```
+git checkout -b release
+```
+then push to the new branch. https://stackoverflow.com/questions/9542665/remote-rejected-master-master-pre-receive-hook-declined
 
 ### Create database
 
